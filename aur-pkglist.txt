@@ -1,0 +1,5 @@
+deckcraft-bin
+sublime-text-4-debug
+wordcraft-bin
+yay
+yay-debug

@@ -1,0 +1,14 @@
+/* Bordeaux / burgundy dark theme */
+
+@define-color module-bg     rgba(20, 13, 14, 0.75);
+@define-color tooltip-bg    rgba(26, 17, 18, 0.90);
+@define-color inactive      #7a5a5e;
+@define-color fg            #e0c0c0;
+@define-color workspace-fg  @fg;
+@define-color highlight     rgba(139, 30, 45, 0.25);
+@define-color border        #3a1f22;
+
+@define-color red           #e05263;
+@define-color blue          #a06b7a;
+@define-color yellow        #d4a05a;
+@define-color green         #7a9466;

@@ -1,0 +1,55 @@
+
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "margin": "5 10",
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "backlight", "network", "cpu", "memory", "battery", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "on-click": "activate"
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": " {usage}%"
+    },
+    "memory": {
+        "format": "󰍛 {percentage}%"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "tooltip-format": "Осталось: {timeTo}"
+    },
+    "network": {
+        "format-wifi": "{icon}",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"], 
+        "format-ethernet": "󰈀 Подключено",
+        "format-disconnected": "󰤭 Нет сети",
+        "on-click": "~/.local/bin/toggle_fuzzel networkmanager_dmenu"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Mute",
+        "format-icons": {"default": ["", "", ""]},
+        "on-click": "hyprpwcenter",
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+   "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"],
+    "on-click": "~/.config/waybar/brightness-menu.sh", // <-- Замените на этот путь
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-",
+    "scroll-step": 5
+},
+}
+

@@ -1,0 +1,25 @@
+/* Стили для pavucontrol */
+window.background.pavu-control,
+.pavu-control .background {
+    background-color: rgba(40, 0, 15, 0.65);
+}
+
+/* Стили для вкладок и панелей внутри */
+.pavu-control notebook,
+.pavu-control .frame,
+.pavu-control scrolledwindow {
+    background-color: rgba(60, 0, 25, 0.75);
+}
+
+/* Стили для слайдеров */
+.pavu-control scale trough {
+    background-color: rgba(80, 0, 35, 0.5);
+}
+.pavu-control scale highlight {
+    background-color: #b3003c;
+}
+
+/* Стили для текста */
+.pavu-control label {
+    color: #f0d0d8;
+}
