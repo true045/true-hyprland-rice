@@ -61,7 +61,6 @@ systemctl --user enable --now pipewire pipewire-pulse wireplumber
 Hyprland
 ```
 ### Основные горячие клавиши (Keybinds)
-### Управление окнами и программами
 
     Super + Q — Открыть терминал (Kitty)
 
