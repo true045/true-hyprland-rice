@@ -64,7 +64,7 @@ Hyprland
 
     Super + Q — Открыть терминал (Kitty)
 
-    Super + R — Открыть True Rice Manager (наше GUI на Rust)
+    Super + R — Открыть True Rice Manager (мое GUI на Rust)
 
     Super + D — Меню запуска (Fuzzel)
 
