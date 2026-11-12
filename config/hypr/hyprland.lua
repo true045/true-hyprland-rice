@@ -53,7 +53,7 @@ local menu        = "hyprlauncher"
 --   hl.exec_cmd(terminal)
 --   hl.exec_cmd("nm-applet")
      hl.exec_cmd("pkill waybar; waybar")
-     hl.exec_cmd("swaybg -i /home/true/Downloads/2Rud_qFL.jpg -m fill")
+     hl.exec_cmd("swaybg -i ~/.config/hypr/wallpapers/2Rud_qFL.jpg -m fill")
  end)
 
 

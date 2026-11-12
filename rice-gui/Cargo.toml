@@ -1,0 +1,9 @@
+[package]
+name = "rice-gui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+gtk4 = { version = "0.9", features = ["v4_10"] }
+dirs = "5.0"
+regex = "1.10" 

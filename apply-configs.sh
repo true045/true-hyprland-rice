@@ -1,7 +1,12 @@
 #!/bin/bash
-echo "🔗 Создаю символические ссылки через Stow..."
+set -e
 
-# Применяем конфиги из папки config в ~/.config
+if ! command -v stow &> /dev/null; then
+    echo "❌ GNU Stow не установлен. Установи его: sudo pacman -S stow"
+    exit 1
+fi
+
+echo "🔗 Создаю символические ссылки через Stow..."
 cd config
 for dir in */; do
     package=$(basename "$dir")
@@ -10,7 +15,6 @@ for dir in */; do
 done
 cd ..
 
-# Применяем .zshrc (если он есть)
 if [ -f ".zshrc" ]; then
     echo "-> Применяю .zshrc..."
     ln -sf "$PWD/.zshrc" "$HOME/.zshrc"
