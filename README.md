@@ -24,47 +24,44 @@
 
 ### 1. Подготовка
 Убедись, что у тебя есть интернет и установлены базовые пакеты (включая компилятор Rust для нашего GUI и Stow для конфигов):
-```bash
+```
 sudo pacman -Syu --needed base-devel git stow rust
-
+```
 ### 2. Установка AUR-хелпера (yay)
-
+```
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 cd ..
 rm -rf yay
-
+```
 ### 3. Клонирование райса
-
+```
 git clone https://github.com/true045/true-hyprland-rice.git
 cd true-hyprland-rice
-
+```
 ### 4. Установка пакетов и сборка GUI
 
 Скрипт автоматически установит все нужные программы (Hyprland, Waybar, Kitty, PipeWire и т.д.), а также соберет и установит графическую программу на Rust:
-bash
-
+```
 ./install-packages.sh
-
+```
 ## 5. Применение конфигов
 
 Скрипт создаст символические ссылки на конфиги в вашей системе через stow:
-bash
-
+```
 ./apply-configs.sh
-
+```
 ### 6. Включение служб и запуск
 
 Включи сеть, звук (для корректной работы Waybar и GUI) и запусти Hyprland:
-bash
-
+```
 sudo systemctl enable --now NetworkManager
 systemctl --user enable --now pipewire pipewire-pulse wireplumber
 Hyprland
-
- Основные горячие клавиши (Keybinds)
-Управление окнами и программами
+```
+### Основные горячие клавиши (Keybinds)
+### Управление окнами и программами
 
     Super + Q — Открыть терминал (Kitty)
 
