@@ -12,7 +12,9 @@
 - **Обои**: Автоматически подтягиваются из репозитория
 
 ##  Скриншоты
-<img width="1366" height="768" alt="изображение" src="https://github.com/user-attachments/assets/bfcd7e22-3ada-4a1a-904c-83c02583d2e3" />
+<img width="1366" height="768" alt="изображение" src="https://github.com/user-attachments/assets/bfcd7e22-3ada-4a1a-904c-83c02583d2e3" /> 
+<img width="1360" height="756" alt="изображение" src="https://github.com/user-attachments/assets/9ba06010-f303-42c9-af3b-12aa6f8864db" />
+
 
 
 ## Установка (Installation)
